@@ -1,0 +1,12 @@
+# Ignore frontend and other files for language detection
+*.css linguist-detectable=false
+*.js linguist-detectable=false
+*.html linguist-detectable=false
+*.png linguist-vendored=true
+*.jpg linguist-vendored=true
+*.jpeg linguist-vendored=true
+*.gif linguist-vendored=true
+*.svg linguist-vendored=true
+
+# Prioritize PHP
+*.php linguist-language=PHP
