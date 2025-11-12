@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Person Report Form</title>
+    <link rel="stylesheet" href="missing.css">
+    
+</head>
+<body>
+
+<div class="container">
+    <h2>Missing Person Report Form</h2>
+    <form action="missing.php" method="POST">
+        <div class="form-group">
+            <label for="missing_name">Name of Missing Person</label>
+            <input type="text" id="missing_name" name="missing_name" required>
+        </div>
+        <div class="form-group">
+            <label for="missing_age">Age</label>
+            <input type="number" id="missing_age" name="missing_age" required>
+        </div>
+        <div class="form-group">
+            <label for="missing_gender">Gender</label>
+            <select id="missing_gender" name="missing_gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="missing_description">Physical Description</label>
+            <textarea id="missing_description" name="missing_description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="missing_last_seen">Last Seen Location</label>
+            <input type="text" id="missing_last_seen" name="missing_last_seen" required>
+        </div>
+        <div class="form-group">
+            <label for="missing_last_seen_date">Date Last Seen</label>
+            <input type="date" id="missing_last_seen_date" name="missing_last_seen_date" required>
+        </div>
+        <div class="form-group">
+            <label for="missing_last_seen_time">Time Last Seen</label>
+            <input type="time" id="missing_last_seen_time" name="missing_last_seen_time" required>
+        </div>
+        <div class="form-group">
+            <label for="reporter_name">Your Name</label>
+            <input type="text" id="reporter_name" name="reporter_name" required>
+        </div>
+        <div class="form-group">
+            <label for="reporter_contact">Your Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="additional_info">Additional Information</label>
+            <textarea id="additional_info" name="additional_info"></textarea>
+        </div>
+        <div class="form-group">
+            
+            <button type="submit">Submit Report</button>
+
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

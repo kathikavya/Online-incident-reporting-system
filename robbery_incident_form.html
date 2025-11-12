@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robbery Incident Report Form</title>
+   <link rel="stylesheet" href="robbery.css">
+   <script src="robbery.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Robbery Incident Report Form</h2>
+    <form action="robbery.php" method="POST">
+        <div class="form-group">
+            <label for="incident_date">Date of Incident</label>
+            <input type="date" id="incident_date" name="incident_date" required>
+        </div>
+        <div class="form-group">
+            <label for="incident_time">Time of Incident</label>
+            <input type="time" id="incident_time" name="incident_time" required>
+        </div>
+        <div class="form-group">
+            <label for="incident_location">Location of Incident</label>
+            <input type="text" id="incident_location" name="incident_location" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description of Incident</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="suspect_description">Description of Suspect(s)</label>
+            <textarea id="suspect_description" name="suspect_description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="stolen_items">Description of Stolen Items</label>
+            <textarea id="stolen_items" name="stolen_items" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="reporter_name">Your Name</label>
+            <input type="text" id="reporter_name" name="reporter_name" required>
+        </div>
+        <div class="form-group">
+            <label for="reporter_contact">Your Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="additional_info">Additional Information</label>
+            <textarea id="additional_info" name="additional_info"></textarea>
+        </div>
+        <div class="form-group">
+           
+            <button type="submit">Submit Report</button>
+
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

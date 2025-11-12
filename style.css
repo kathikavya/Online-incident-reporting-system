@@ -1,0 +1,85 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff; 
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333; 
+}
+
+h1 {
+    text-align: center;
+}
+   
+h2{
+    text-size:20px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+.image{
+    width:350px;
+    height:300px;
+}
+.bottom{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10%;
+}
+
+.incident-types a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #fff; 
+    text-align: center;
+    gap:10%;
+}
+
+.incident-types a.crime {
+    background-color:#6c757d; 
+}
+
+.incident-types a.missing {
+    background-color:#6c757d; 
+}
+
+.incident-types a.robbery {
+    background-color: #6c757d; 
+}
+
+.incident-types a.vandalism {
+    background-color:#6c757d; 
+}
+
+.incident-types a.environment {
+    background-color: #6c757d; 
+}
+.incident-types a.violence{
+    background-color:#6c757d; 
+}
+
+.incident-types a:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

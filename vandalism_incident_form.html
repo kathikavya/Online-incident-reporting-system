@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandalism Incident Report System</title>
+    <link rel="stylesheet" href="vandalism.css">
+    
+</head>
+<body>
+    <h1>Vandalism Incident Report System</h1>
+    <form action="vandalism.php" method="post">
+        <label for="incident_date">Date of Incident:</label>
+        <input type="date" id="incident_date" name="incident_date" required>
+
+        <label for="location">Location of Incident:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="description">Description of Vandalism:</label>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+
+        
+
+        <label for="suspect_description">Description of Suspect (if known):</label>
+        <textarea id="suspect_description" name="suspect_description" rows="4" cols="50"></textarea>
+
+        <label for="witnesses">Witnesses (if any):</label>
+        <input type="text" id="witnesses" name="witnesses">
+
+        <label for="reporter_name">Your Name:</label>
+        <input type="text" id="reporter_name" name="reporter_name" required>
+
+        <label for="contact_info">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+       
+        <input type="submit" value="submit">
+        
+    </form>
+</body>
+</html>

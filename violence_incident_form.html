@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violence Incident Report Form</title>
+     <link rel="stylesheet" href="violence.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Violence Incident Report Form</h2>
+    <form action="violence.php" method="POST">
+        <div class="form-group">
+            <label for="incident_date">Date of Incident</label>
+            <input type="date" id="incident_date" name="incident_date" required>
+        </div>
+        <div class="form-group">
+            <label for="incident_time">Time of Incident</label>
+            <input type="time" id="incident_time" name="incident_time" required>
+        </div>
+        <div class="form-group">
+            <label for="incident_location">Location of Incident</label>
+            <input type="text" id="incident_location" name="incident_location" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description of Violence</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="violence_type">Type of Violence</label>
+            <select id="violence_type" name="violence_type" required>
+                <option value="">Select Type</option>
+                <option value="physical">Physical Violence</option>
+                <option value="verbal">Verbal Abuse</option>
+                <option value="sexual">Sexual Assault</option>
+                <option value="domestic">Domestic Violence</option>
+                <option value="bullying">Bullying</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="reporter_name">Your Name</label>
+            <input type="text" id="reporter_name" name="reporter_name" required>
+        </div>
+        <div class="form-group">
+            <label for="reporter_contact">Your Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="additional_info">Additional Information</label>
+            <textarea id="additional_info" name="additional_info"></textarea>
+        </div>
+        <div class="form-group">
+           
+            <button type="submit">Submit Report</button>
+
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
